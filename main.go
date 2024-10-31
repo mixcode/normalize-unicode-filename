@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"runtime"
 	"strings"
 
 	"golang.org/x/text/unicode/norm" // unicode normalizer
@@ -202,5 +203,19 @@ func main() {
 	if err != nil {
 		fmt.Fprintln(os.Stderr, err.Error())
 		os.Exit(1)
+	}
+}
+
+func init() {
+	// init default normalization form based on the OS
+	switch runtime.GOOS {
+	case "windows": // windows
+		formName = "NFC"
+	case "darwin": // macos / ios
+		formName = "NFD"
+	//case "linux":
+	//	formName = "NFC"
+	default:
+		formName = "NFC"
 	}
 }
