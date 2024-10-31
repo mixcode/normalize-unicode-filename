@@ -35,8 +35,12 @@ Usage: ./normalize-unicode-filename [option] filename [filename...]
 
 ### Examples
 
+Change filenames in the current directory for the current OS.
+```
+$ ./normalize-unicode-filename *
+```
 
-Change filenames in the current directory to Windows-friendly form.
+Change filenames to explicit Windows-friendly form.
 ```
 $ ./normalize-unicode-filename -form=win *
 ```
