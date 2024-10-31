@@ -37,13 +37,13 @@ This program renames filenames to their normalized Unicode forms to account for 
 
 `
 
-	help_examples = `Change filenames in the current directory to Windows-friendly form:
-  $ %[1]s -form=win *
+	help_examples = `Change filenames in the current directory to current-OS-friendly form:
+  $ %[1]s *
 
-Change filenames to macOS-friendly form, recursively renaming files in its subdirectoreis:
+Change filenames to macOS-friendly form, recursively renaming files in subdirectoreis:
   $ %[1]s -form=mac -r *
 
-Print possible filenames for NFKD form, without changing filenames 
+Print possible filenames for NFKD form, without changing filenames:
   $ %[1]s -form=NFKD -r -dryrun -both *
 
 `

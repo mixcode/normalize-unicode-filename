@@ -16,7 +16,7 @@ $ go install github.com/mixcode/normalize-unicode-filename@latest
 ### Usage
 
 ```
-Usage: ./normalize-unicode-filename [option] filename [filename...]
+Usage: normalize-unicode-filename [option] filename [filename...]
 
   -b	shorthand for '-both'
   -both
@@ -37,22 +37,22 @@ Usage: ./normalize-unicode-filename [option] filename [filename...]
 
 Change filenames in the current directory for the current OS.
 ```
-$ ./normalize-unicode-filename *
+$ normalize-unicode-filename *
 ```
 
 Change filenames to explicit Windows-friendly form.
 ```
-$ ./normalize-unicode-filename -form=win *
+$ normalize-unicode-filename -form=win *
 ```
 
 Change filenames to macOS-friendly form, recursively renaming files in its subdirectories.
 ```
-$ ./normalize-unicode-filename -form=mac -r *
+$ normalize-unicode-filename -form=mac -r *
 ```
 
 Print possible filenames for NFKD form, without changing filenames.
 ```
-$ ./normalize-unicode-filename -form=NFKD -r -dryrun -both *
+$ normalize-unicode-filename -form=NFKD -r -dryrun -both *
 ```
 
 ### Memo
