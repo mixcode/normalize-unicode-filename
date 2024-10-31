@@ -53,6 +53,6 @@ $ ./normalize-unicode-filename -form=NFKD -r -dryrun -both *
 
 ### Memo
 
-Please note that NFKC and NFKD may cause irreversible changes. Be careful using them.
+Please note that NFKC and NFKD may cause irreversible changes. Be careful to using them.
 
 
