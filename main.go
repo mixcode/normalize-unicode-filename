@@ -47,7 +47,6 @@ Print possible filenames for NFKD form, without changing filenames
 
 `
 )
-	
 
 func normalize(s string) string {
 	return formCode.String(s)
