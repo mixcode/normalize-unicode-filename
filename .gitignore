@@ -3,5 +3,5 @@ _*
 *.swp
 
 normalize-unicode-filename
-normalize-unicode-filename.exe
+normalize-unicode-filename.*
 

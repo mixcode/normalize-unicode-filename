@@ -25,10 +25,10 @@ Usage: normalize-unicode-filename [option] filename [filename...]
   -dryrun
     	dry-run: do not change file name; print only
   -f string
-    	shorthand for '-form' (default "NFC")
+    	shorthand for '-form'
   -form string
     	Unicode normalization type. One of NFC, NFD, NFKC, NFKD,
-    	or WIN, MAC (default "NFC")
+    	or WIN, MAC
   -q	quiet; do not print filenames
   -r	recurse subdirectories
 ```
@@ -36,6 +36,7 @@ Usage: normalize-unicode-filename [option] filename [filename...]
 ### Examples
 
 Change filenames in the current directory for the current OS.
+If the current os is MacOS, then the default form will be NFD, otherwise NFC.
 ```
 $ normalize-unicode-filename *
 ```
